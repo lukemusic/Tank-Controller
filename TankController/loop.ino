@@ -21,8 +21,7 @@ void loop() {
     int quest_start = millis();
     int time_diff = 0;
 
-    switch(currentKey) {
-
+    switch (currentKey) {
       /// Change pH set_point ///////////////////////////////////////////////////////////////////////////////////
       case 'A':
         a_function();
@@ -737,7 +736,7 @@ void a_function() {
 
   key = state.back();
 
-  switch(state.length()) {
+  switch (state.length()) {
     case 1:
       newph = key - '0';
       lcd.setCursor(0, 1);
